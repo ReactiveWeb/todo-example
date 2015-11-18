@@ -1,0 +1,10 @@
+/_build
+/deps
+erl_crash.dump
+*.ez
+/bak
+/.idea
+mix.lock
+server.iml
+/apps/*
+entities

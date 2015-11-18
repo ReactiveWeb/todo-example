@@ -1,0 +1,34 @@
+.todo {
+    width: 250px;
+    height: 400px;
+    position: relative;
+    display: inline-block;
+    border: 1px solid gray;
+    vertical-align: top;
+    margin: 23px;
+}
+.addTask input {
+    border: none;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    background: none;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.task {
+    margin: 5px;
+}
+.task .rect {
+    position: relative;
+    cursor: pointer;
+}
+.task .done {
+    position: absolute;
+    left: 2px;
+    bottom: 0px;
+    pointer-events: none;
+    font-size: 1.2em;
+}
+.task .remove {
+    cursor: pointer;
+}

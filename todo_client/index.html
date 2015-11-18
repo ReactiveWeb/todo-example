@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TODO Example</title>
+
+  <link rel="stylesheet" href="index.css" type="text/css">
+</head>
+<body>
+
+<div data-bind="foreach: lists">
+  <div class="todo">
+    <form class="addTask" data-bind="submit: addTask">
+      <input type="text" data-bind="value: newTaskName" placeholder="new task">
+    </form>
+    <div class="list" data-bind="foreach: tasks">
+      <div class="task">
+        <span class="rect" data-bind="click: $parent.toggleTask.bind($parent,$data)">▢
+          <span class="done" data-bind="visible: done">✓</span>
+        </span>
+        <span class="name" data-bind="text: name"></span>
+        <span class="remove" data-bind="click: $parent.removeTask.bind($parent,$data)">×</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="index-compiled.js"></script>
+
+</body>
+</html>
