@@ -1,7 +1,7 @@
 Reactive Web - TODO Example
 ===========================
 
-Dependencies: mix, webpack
+Dependencies: elixir, mix, webpack, node, npm
 
 Run:
   
